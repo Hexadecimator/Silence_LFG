@@ -1,0 +1,9 @@
+## Interface: 20501
+## Title: SilenceLFG
+## Version: .69
+## Notes: Sleek way of disabling LFG channel spam
+## Author: MarxWasRight-Fairbanks
+## SavedVariables: SLFG_data
+## DefaultState: enabled
+
+SLFG_core.lua
