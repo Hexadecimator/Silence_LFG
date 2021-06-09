@@ -54,19 +54,8 @@ UItogBtn:SetScript("OnClick",
                                 function(self, button)
                                     slfgBTNState = not slfgBTNState;
                                     if (slfgBTNState) then
-                                        --local t, name = JoinChannelByName("LookingForGroup");
-                                        --JoinChannelByName("LookingForGroup");
                                         local channel_type, channel_name = JoinChannelByName("LookingForGroup");
                                         ChatFrame_AddChannel(DEFAULT_CHAT_FRAME, "LookingForGroup");
-                                        print("W-H-L-R");
-                                        print(UItogBtn:GetWidth());
-                                        print(UItogBtn:GetHeight());
-                                        print(UItogBtn:GetLeft());
-                                        print(UItogBtn:GetRight());
-                                        -- UItogBtn:SetWidth(w);
-                                        -- UItogBtn:SetHeight(h);
-                                        -- UItogBtn:SetLeft(l);
-                                        -- UItogBtn:SetRight(r);
                                         print("|cffff0000JOINED LFG|r");
                                     else
                                         LeaveChannelByName("LookingForGroup");
@@ -74,6 +63,16 @@ UItogBtn:SetScript("OnClick",
                                         print("|cffff0000LEFT LFG|r");
                                     end
                                 end);                  
+
+
+
+
+function unmount(self)
+    print("inside tryanddismount")
+    Dismount();
+end
+
+
 
 -- **********************************************
 -- ** SLASH CMD DEF SECTION *********************
