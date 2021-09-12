@@ -3,11 +3,9 @@
     <Frame name="unmountme">
         <Scripts>
             <OnLoad>
-                print("SLFG XML DEBUG");
                 self:RegisterEvent("TAXIMAP_OPENED");
             </OnLoad>
             <OnEvent>
-                print("TRIGGERING SLFG UNMOUNT");
                 if (event == "TAXIMAP_OPENED") then unmount(self); end
             </OnEvent>
         </Scripts>

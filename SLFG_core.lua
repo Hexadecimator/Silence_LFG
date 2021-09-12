@@ -45,11 +45,11 @@ WISHLIST:
 local slfgBTNState = false;
 
 UItogBtn = CreateFrame("Button", nil, UIMain, "GameMenuButtonTemplate");
-UItogBtn:SetPoint("CENTER", UIMain, "TOP", 0, -80);
-UItogBtn:SetSize(45, 30);
+UItogBtn:SetPoint("RIGHT", UIMain, "TOPRIGHT", -15, -192); -- CENTER TOP
+UItogBtn:SetSize(40, 20);
 UItogBtn:SetText("LFG");
-UItogBtn:SetNormalFontObject("GameFontNormalLarge");
-UItogBtn:SetHighlightFontObject("GameFontHighlightLarge");
+UItogBtn:SetNormalFontObject("GameFontNormalSmall");
+UItogBtn:SetHighlightFontObject("GameFontHighlightSmall");
 UItogBtn:SetScript("OnClick",
                                 function(self, button)
                                     slfgBTNState = not slfgBTNState;
@@ -68,7 +68,6 @@ UItogBtn:SetScript("OnClick",
 
 
 function unmount(self)
-    print("inside tryanddismount")
     Dismount();
 end
 
